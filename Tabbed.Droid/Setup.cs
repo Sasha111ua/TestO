@@ -3,7 +3,7 @@ using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.Droid.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace Tabbed.Droid
+namespace OmnicTabs.Droid
 {
     public class Setup : MvxAndroidSetup
     {

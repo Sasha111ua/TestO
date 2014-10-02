@@ -1,9 +1,9 @@
 using Cirrious.MvvmCross.Touch.Views.Presenters;
 using MonoTouch.UIKit;
 using Cirrious.MvvmCross.Touch.Platform;
-using Tabbed.Touch.Views;
+using OmnicTabs.Touch.Views;
 
-namespace Tabbed.Touch
+namespace OmnicTabs.Touch
 {
 	public class Setup : MvxTouchSetup
 	{

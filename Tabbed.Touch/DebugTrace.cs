@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using Cirrious.CrossCore.Platform;
 
-namespace Tabbed.Touch
+namespace OmnicTabs.Touch
 {
     public class DebugTrace : IMvxTrace
     {

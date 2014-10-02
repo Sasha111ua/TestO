@@ -1,6 +1,6 @@
 using Cirrious.CrossCore.IoC;
 
-namespace Tabbed.Core
+namespace OmnicTabs.Core
 {
     public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
     {
@@ -11,7 +11,7 @@ namespace Tabbed.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.OmnicTabsViewModel>();
         }
     }
 }

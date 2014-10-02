@@ -1,9 +1,9 @@
-Tabbed.Droid.SplashScreen;tabbed.droid.SplashScreen
-Tabbed.Droid.Views.GrandChildView;tabbed.droid.views.GrandChildView
-Tabbed.Droid.Views.Child1View;tabbed.droid.views.Child1View
-Tabbed.Droid.Views.Child2View;tabbed.droid.views.Child2View
-Tabbed.Droid.Views.Child3View;tabbed.droid.views.Child3View
-Tabbed.Droid.Views.FirstView;tabbed.droid.views.FirstView
+OmnicTabs.Droid.SplashScreen;omnictabs.droid.SplashScreen
+OmnicTabs.Droid.Views.GrandChildView;omnictabs.droid.views.GrandChildView
+OmnicTabs.Droid.Views.Child1View;omnictabs.droid.views.Child1View
+OmnicTabs.Droid.Views.Child2View;omnictabs.droid.views.Child2View
+OmnicTabs.Droid.Views.Child3View;omnictabs.droid.views.Child3View
+OmnicTabs.Droid.Views.OmnicTabsView;omnictabs.droid.views.OmnicTabsView
 Cirrious.CrossCore.Droid.MvxJavaContainer;cirrious.crosscore.droid.MvxJavaContainer
 Cirrious.CrossCore.Droid.MvxJavaContainer`1;cirrious.crosscore.droid.MvxJavaContainer_1
 Cirrious.CrossCore.Droid.MvxReplaceableJavaContainer;cirrious.crosscore.droid.MvxReplaceableJavaContainer

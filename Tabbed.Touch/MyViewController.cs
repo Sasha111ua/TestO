@@ -2,7 +2,7 @@ using System;
 using MonoTouch.UIKit;
 using System.Drawing;
 
-namespace Tabbed.Touch
+namespace OmnicTabs.Touch
 {
     public class MyViewController : UIViewController
     {

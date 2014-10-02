@@ -67,7 +67,7 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		"Tabbed.Droid.dll",
+		"OmnicTabs.Droid.dll",
 		"Cirrious.CrossCore.dll",
 		"Cirrious.CrossCore.Droid.dll",
 		"Cirrious.MvvmCross.Binding.dll",
@@ -75,7 +75,7 @@ class MonoPackageManager_Resources {
 		"Cirrious.MvvmCross.dll",
 		"Cirrious.MvvmCross.Droid.dll",
 		"Cirrious.MvvmCross.Localization.dll",
-		"Tabbed.Core.dll",
+		"OmnicTabs.Core.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

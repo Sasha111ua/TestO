@@ -5,9 +5,9 @@ using Cirrious.MvvmCross.ViewModels;
 using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using Tabbed.Core.ViewModels;
+using OmnicTabs.Core.ViewModels;
 
-namespace Tabbed.Touch.Views
+namespace OmnicTabs.Touch.Views
 {
     [Register("FirstView")]
     public sealed class FirstView : MvxTabBarViewController
@@ -18,8 +18,8 @@ namespace Tabbed.Touch.Views
             ViewDidLoad();
         }
 
-        protected FirstViewModel FirstViewModel
-        { get { return base.ViewModel as FirstViewModel; } }
+        protected OmnicTabsViewModel FirstViewModel
+        { get { return base.ViewModel as OmnicTabsViewModel; } }
 
         public override void ViewDidLoad()
         {

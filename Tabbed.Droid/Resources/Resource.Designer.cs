@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Tabbed.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("OmnicTabs.Droid.Resource", IsApplication=true)]
 
-namespace Tabbed.Droid
+namespace OmnicTabs.Droid
 {
 	
 	
@@ -93,9 +93,6 @@ namespace Tabbed.Droid
 			// aapt resource value: 0x7f040000
 			public const int MvxBindingTagUnique = 2130968576;
 			
-			// aapt resource value: 0x7f040001
-			public const int MyButton = 2130968577;
-			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -119,16 +116,13 @@ namespace Tabbed.Droid
 			public const int Child3View = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int FirstView = 2130903043;
+			public const int GrandChildView = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int GrandChildView = 2130903044;
+			public const int OmnicTabsView = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Main = 2130903045;
-			
-			// aapt resource value: 0x7f030006
-			public const int SplashScreen = 2130903046;
+			public const int SplashScreen = 2130903045;
 			
 			static Layout()
 			{

@@ -2,10 +2,10 @@ using Android.App;
 using Android.Content.PM;
 using Cirrious.MvvmCross.Droid.Views;
 
-namespace Tabbed.Droid
+namespace OmnicTabs.Droid
 {
     [Activity(
-		Label = "Tabbed.Droid"
+        Label = "OmnicTabs.Droid"
 		, MainLauncher = true
 		, Icon = "@drawable/icon"
 		, Theme = "@style/Theme.Splash"

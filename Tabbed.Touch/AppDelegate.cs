@@ -4,7 +4,7 @@ using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Touch.Platform;
 using Cirrious.MvvmCross.ViewModels;
 
-namespace Tabbed.Touch
+namespace OmnicTabs.Touch
 {
     [Register("AppDelegate")]
     public partial class AppDelegate : MvxApplicationDelegate

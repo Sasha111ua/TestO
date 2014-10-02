@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Tabbed.Touch
+namespace OmnicTabs.Touch
 {
     public class Application
     {

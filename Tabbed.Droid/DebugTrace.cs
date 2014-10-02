@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using Cirrious.CrossCore.Platform;
 
-namespace Tabbed.Droid
+namespace OmnicTabs.Droid
 {
     public class DebugTrace : IMvxTrace
     {

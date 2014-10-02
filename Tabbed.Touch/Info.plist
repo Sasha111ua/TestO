@@ -13,14 +13,16 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>3.2</string>
+	<string></string>
 	<key>CFBundleDisplayName</key>
-	<string>N-25-Tabbed</string>
+	<string>OmnicTabs</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.mvvmcross.nequals25</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSMainNibFile</key>
+	<string></string>
+	<key>CFBundleShortVersionString</key>
 	<string></string>
 </dict>
 </plist>

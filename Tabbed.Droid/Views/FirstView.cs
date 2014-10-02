@@ -3,9 +3,9 @@ using Android.Content;
 using Android.OS;
 using Android.Widget;
 using Cirrious.MvvmCross.Droid.Views;
-using Tabbed.Core.ViewModels;
+using OmnicTabs.Core.ViewModels;
 
-namespace Tabbed.Droid.Views
+namespace OmnicTabs.Droid.Views
 {
     [Activity(Label = "View for GrandChildViewModel")]
     public class GrandChildView : MvxActivity
@@ -44,18 +44,18 @@ namespace Tabbed.Droid.Views
         }
     }
 
-    [Activity(Label = "View for FirstViewModel")]
-    public class FirstView : MvxTabActivity
+    [Activity(Label = "View for OmnicTabsViewModel")]
+    public class OmnicTabsView : MvxTabActivity
     {
-        protected FirstViewModel FirstViewModel
+        protected OmnicTabsViewModel FirstViewModel
         {
-            get { return base.ViewModel as FirstViewModel; }
+            get { return base.ViewModel as OmnicTabsViewModel; }
         }
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.FirstView);
+            SetContentView(Resource.Layout.OmnicTabsView);
 
 
             TabHost.TabSpec spec;
