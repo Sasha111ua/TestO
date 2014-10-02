@@ -2,6 +2,7 @@ using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
 using System.Collections.Generic;
 using OmnicTabs.Core.Services;
+using System.Threading.Tasks;
 
 namespace OmnicTabs.Core.ViewModels
 {
@@ -62,16 +63,20 @@ namespace OmnicTabs.Core.ViewModels
         {
             LoadImages(service);
         }
-        void LoadImages(IImageService service)
+        private async void LoadImages(IImageService service)
         {
-            var newList = new List<Image>();
-            for (var i = 0; i < 10; i++)
-            {
-                var newKitten = service.ImageFactory();
-                newList.Add(newKitten);
-            }
+             Images = await Task<List<Image>>.Factory.StartNew(() =>
+                {
 
-            Images = newList;
+                    var newList = new List<Image>();
+                    for (var i = 0; i < 1000; i++)
+                    {
+                        var newKitten = service.ImageFactory();
+                        newList.Add(newKitten);
+                    }
+
+                    return newList;
+                });
         }
        
     }

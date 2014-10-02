@@ -41,3 +41,6 @@ H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\res\values\mvxbindingat
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\res\drawable\splash.png
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\R.cs.flag
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\uploadflags.txt
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\OmnicTabs.Droid.dll.config
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\Microsoft.Threading.Tasks.dll
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\Microsoft.Threading.Tasks.xml
