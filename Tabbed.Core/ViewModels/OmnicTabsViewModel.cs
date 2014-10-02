@@ -1,5 +1,7 @@
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
+using System.Collections.Generic;
+using OmnicTabs.Core.Services;
 
 namespace OmnicTabs.Core.ViewModels
 {
@@ -8,7 +10,7 @@ namespace OmnicTabs.Core.ViewModels
     {
         public OmnicTabsViewModel()
         {
-            Child1 = new Child1ViewModel();
+            Child1 = new Child1ViewModel(new ImageLoader());
             Child2 = new Child2ViewModel();
             Child3 = new Child3ViewModel();
         }
@@ -37,16 +39,28 @@ namespace OmnicTabs.Core.ViewModels
     public class Child1ViewModel
     : MvxViewModel
     {
-        private string _foo = "Hello Foo";
-        public string Foo
-        {
-            get { return _foo; }
-            set { _foo = value; RaisePropertyChanged(() => Foo); }
-        }
-        
+        /*
         public ICommand GoCommand
         {
             get { return new MvxCommand(() => ShowViewModel<GrandChildViewModel>());}
+        }*/
+        List<Image> _images;
+        public List<Image> Images
+        {
+            get { return _images; }
+            set { _images = value; RaisePropertyChanged(() => Images); }
+        }
+
+        public Child1ViewModel(IImageService service)
+        {
+            var newList = new List<Image>();
+            for (var i = 0; i < 100; i++)
+            {
+                var newKitten = service.ImageFactory();
+                newList.Add(newKitten);
+            }
+
+            Images = newList;
         }
     }
     public class Child2ViewModel
