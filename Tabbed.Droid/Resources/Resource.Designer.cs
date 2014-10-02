@@ -99,6 +99,9 @@ namespace OmnicTabs.Droid
 			// aapt resource value: 0x7f040001
 			public const int button1 = 2130968577;
 			
+			// aapt resource value: 0x7f040003
+			public const int button2 = 2130968579;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

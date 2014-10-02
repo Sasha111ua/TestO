@@ -1,6 +1,10 @@
 using Android.App;
+using Android.Content;
+using Android.Net;
 using Android.OS;
+using Android.Provider;
 using Cirrious.MvvmCross.Droid.Views;
+using OmnicTabs.Core;
 
 namespace OmnicTabs.Droid.Views
 {

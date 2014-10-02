@@ -17,6 +17,5 @@ H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.IO.xml
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.Runtime.xml
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.Threading.Tasks.xml
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.csproj.App.config
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.csprojResolveAssemblyReference.cache
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.pdb

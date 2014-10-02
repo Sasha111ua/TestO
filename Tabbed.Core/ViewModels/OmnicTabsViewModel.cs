@@ -114,6 +114,7 @@ namespace OmnicTabs.Core.ViewModels
     public class GrandChildViewModel
         : MvxViewModel
     {
+        Child1ViewModel _parent;
         string _imageUrl;
         public GrandChildViewModel()
         {
@@ -124,10 +125,28 @@ namespace OmnicTabs.Core.ViewModels
             get { return _imageUrl; }
             set { _imageUrl = value; RaisePropertyChanged(() => ImageUrl); }
         }
+       public ICommand SaveButtonClick
+        {
+            get { return new MvxCommand(() => SaveButtonClickHandler()); }
+        }
+
+       void SaveButtonClickHandler()
+       {
+         //here save photo
+       }
+        public ICommand RemoveButtonClick
+        {
+            get { return new MvxCommand(() => RemoveButtonClickHandler()); }
+        }
+
+        void RemoveButtonClickHandler()
+        {
+            //here to remove file to Gallery
+        }
     }
     public static class Parameters
     {
-        static string _imageUrl;
+       static string _imageUrl;
        public static void SetImageUrl(string url)
         {
             _imageUrl = url;
