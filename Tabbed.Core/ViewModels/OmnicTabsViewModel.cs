@@ -44,7 +44,7 @@ namespace OmnicTabs.Core.ViewModels
         public ICommand ZoomImageCommand
         {
             // I thinks its a bug, but ShowViewModel<T> doesnt work, so for now i pass params throu static.
-            get { Parameters.ImageUrl ="http://lorempixel.com/200/200"; return new MvxCommand(() => ShowViewModel(typeof(GrandChildViewModel))); }
+            get { return new MvxCommand(() => ShowViewModel(typeof(GrandChildViewModel))); }
         }
         public ICommand RefreshCommand
         {
@@ -58,6 +58,13 @@ namespace OmnicTabs.Core.ViewModels
         {
             get { return _images; }
             set { _images = value; RaisePropertyChanged(() => Images); }
+        }
+        Image _choosenItem;
+        public Image ChosenItem 
+        {
+            get { return _choosenItem; } 
+            set { _choosenItem = value ;
+            Parameters.ImageUrl = value.Url;} 
         }
 
         public Child1ViewModel(IImageService service)
