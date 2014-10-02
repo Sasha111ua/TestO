@@ -59,12 +59,14 @@ namespace OmnicTabs.Core.ViewModels
             get { return _images; }
             set { _images = value; RaisePropertyChanged(() => Images); }
         }
-        Image _choosenItem;
+        Image _chosenItem;
         public Image ChosenItem 
         {
-            get { return _choosenItem; } 
-            set { _choosenItem = value ;
-            Parameters.ImageUrl = value.Url;} 
+            get { return _chosenItem; } 
+            set { _chosenItem = value ;
+            Parameters.SetImageUrl(value.Url);
+            RaisePropertyChanged(() => ChosenItem);
+            } 
         }
 
         public Child1ViewModel(IImageService service)
@@ -112,14 +114,27 @@ namespace OmnicTabs.Core.ViewModels
     public class GrandChildViewModel
         : MvxViewModel
     {
+        string _imageUrl;
+        public GrandChildViewModel()
+        {
+            _imageUrl = Parameters.GetImageUrl();
+        }
        public string ImageUrl
         {
-            get { return Parameters.ImageUrl; }
-            set { Parameters.ImageUrl = value; RaisePropertyChanged(() => ImageUrl); }
+            get { return _imageUrl; }
+            set { _imageUrl = value; RaisePropertyChanged(() => ImageUrl); }
         }
     }
     public static class Parameters
     {
-        public static string ImageUrl { get; set; }
+        static string _imageUrl;
+       public static void SetImageUrl(string url)
+        {
+            _imageUrl = url;
+        }
+       public static string GetImageUrl()
+        {
+            return _imageUrl;
+        }
     }
 }
