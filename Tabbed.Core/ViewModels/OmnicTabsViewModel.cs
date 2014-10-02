@@ -39,11 +39,11 @@ namespace OmnicTabs.Core.ViewModels
     public class Child1ViewModel
     : MvxViewModel
     {
-        /*
+        
         public ICommand GoCommand
         {
             get { return new MvxCommand(() => ShowViewModel<GrandChildViewModel>());}
-        }*/
+        }
         List<Image> _images;
         public List<Image> Images
         {
@@ -54,7 +54,7 @@ namespace OmnicTabs.Core.ViewModels
         public Child1ViewModel(IImageService service)
         {
             var newList = new List<Image>();
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < 10; i++)
             {
                 var newKitten = service.ImageFactory();
                 newList.Add(newKitten);

@@ -36,3 +36,8 @@ H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\OmnicTabs.Droid.pdb
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\android\bin\OmnicTabs.Droid.apk
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\res\layout\omnictabsview.xml
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\res\layout\item_image.xml
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\Cirrious.MvvmCross.Plugins.DownloadCache.dll
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\Cirrious.MvvmCross.Plugins.DownloadCache.Droid.dll
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\Cirrious.MvvmCross.Plugins.File.dll
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\bin\Debug\Cirrious.MvvmCross.Plugins.File.Droid.dll
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Droid\obj\Debug\res\layout\firstview.xml

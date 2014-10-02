@@ -5,7 +5,7 @@ using Cirrious.MvvmCross.Droid.Views;
 namespace OmnicTabs.Droid
 {
     [Activity(
-        Label = "OmnicTabs.Droid"
+		Label = "OmnicTabs.Droid"
 		, MainLauncher = true
 		, Icon = "@drawable/icon"
 		, Theme = "@style/Theme.Splash"

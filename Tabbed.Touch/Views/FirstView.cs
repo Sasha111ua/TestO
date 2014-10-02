@@ -89,7 +89,7 @@ namespace OmnicTabs.Touch.Views
             button.SetTitle("Go", UIControlState.Normal);
             Add(button);
 
-            this.CreateBinding(label).To<Child1ViewModel>(vm => vm.Foo).Apply();
+         //   this.CreateBinding(label).To<Child1ViewModel>(vm => vm.Foo).Apply();
             this.CreateBinding(button).To<Child1ViewModel>(vm => vm.GoCommand).Apply();
         }
     }
