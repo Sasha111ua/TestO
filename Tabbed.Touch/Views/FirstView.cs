@@ -130,7 +130,7 @@ namespace OmnicTabs.Touch.Views
             var label = new UILabel(new RectangleF(10, 10, 300, 40));
             Add(label);
 
-            this.CreateBinding(label).To<GrandChildViewModel>(vm => vm.Life).Apply();
+            this.CreateBinding(label).To<GrandChildViewModel>(vm => vm.ImageUrl).Apply();
         }
     }
 }

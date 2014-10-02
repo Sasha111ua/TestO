@@ -43,7 +43,8 @@ namespace OmnicTabs.Core.ViewModels
         
         public ICommand ZoomImageCommand
         {
-            get { return new MvxCommand(() => ShowViewModel<GrandChildViewModel>());}
+            // I thinks its a bug, but ShowViewModel<T> doesnt work, so for now i pass params throu static.
+            get { Parameters.ImageUrl ="http://lorempixel.com/200/200"; return new MvxCommand(() => ShowViewModel(typeof(GrandChildViewModel))); }
         }
         public ICommand RefreshCommand
         {
@@ -62,12 +63,11 @@ namespace OmnicTabs.Core.ViewModels
         public Child1ViewModel(IImageService service)
         {
             LoadImages(service);
-        }
+        } 
         private async void LoadImages(IImageService service)
         {
              Images = await Task<List<Image>>.Factory.StartNew(() =>
                 {
-
                     var newList = new List<Image>();
                     for (var i = 0; i < 1000; i++)
                     {
@@ -105,11 +105,14 @@ namespace OmnicTabs.Core.ViewModels
     public class GrandChildViewModel
         : MvxViewModel
     {
-        private string _life = "heidi";
-        public string Life
+       public string ImageUrl
         {
-            get { return _life; }
-            set { _life = value; RaisePropertyChanged(() => Life); }
+            get { return Parameters.ImageUrl; }
+            set { Parameters.ImageUrl = value; RaisePropertyChanged(() => ImageUrl); }
         }
+    }
+    public static class Parameters
+    {
+        public static string ImageUrl { get; set; }
     }
 }

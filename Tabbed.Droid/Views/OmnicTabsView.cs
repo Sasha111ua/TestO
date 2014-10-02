@@ -13,7 +13,7 @@ namespace OmnicTabs.Droid.Views
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.GrandChildView);
+            SetContentView(Resource.Layout.ZoomedImageView);
         }
     }
     [Activity(Label = "View for Child1ViewModel")]

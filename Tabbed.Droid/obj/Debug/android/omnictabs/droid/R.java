@@ -67,6 +67,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int MvxBindingTagUnique=0x7f040000;
+        public static final int advisor_message_picture=0x7f040002;
         public static final int button1=0x7f040001;
     }
     public static final class layout {
@@ -74,10 +75,10 @@ containing a value of this type.
         public static final int child2view=0x7f030001;
         public static final int child3view=0x7f030002;
         public static final int firstview=0x7f030003;
-        public static final int grandchildview=0x7f030004;
-        public static final int item_image=0x7f030005;
-        public static final int omnictabsview=0x7f030006;
-        public static final int splashscreen=0x7f030007;
+        public static final int item_image=0x7f030004;
+        public static final int omnictabsview=0x7f030005;
+        public static final int splashscreen=0x7f030006;
+        public static final int zoomedimageview=0x7f030007;
     }
     public static final class string {
         public static final int ApplicationName=0x7f060001;

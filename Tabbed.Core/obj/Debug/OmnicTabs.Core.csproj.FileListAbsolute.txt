@@ -1,15 +1,11 @@
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll.config
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.pdb
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll.CodeAnalysisLog.xml
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll.lastcodeanalysissucceeded
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\Cirrious.CrossCore.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\Cirrious.MvvmCross.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.dll
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.pdb
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.csproj.App.config
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.csprojResolveAssemblyReference.cache
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll.config
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll.CodeAnalysisLog.xml
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\OmnicTabs.Core.dll.lastcodeanalysissucceeded
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\Microsoft.Threading.Tasks.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.IO.dll
@@ -20,3 +16,7 @@ H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\Microsoft.Threading.Task
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.IO.xml
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.Runtime.xml
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\bin\Debug\System.Threading.Tasks.xml
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.csproj.App.config
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.csprojResolveAssemblyReference.cache
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.dll
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Core\obj\Debug\OmnicTabs.Core.pdb

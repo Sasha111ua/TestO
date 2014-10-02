@@ -119,7 +119,7 @@
     <AndroidResource Include="Resources\Layout\Child1View.axml" />
     <AndroidResource Include="Resources\Layout\Child2View.axml" />
     <AndroidResource Include="Resources\Layout\Child3View.axml" />
-    <AndroidResource Include="Resources\Layout\GrandChildView.axml" />
+    <AndroidResource Include="Resources\Layout\ZoomedImageView.axml" />
     <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\Layout\Item_Image.axml">
       <SubType>AndroidResource</SubType>
