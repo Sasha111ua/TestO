@@ -1,3 +1,5 @@
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\obj\iPhone\Debug\
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\obj\iPhone\Debug\OmnicTabs.Touch.csprojResolveAssemblyReference.cache
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\TabbedTouch.exe
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\TabbedTouch.pdb
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\Cirrious.CrossCore.dll
@@ -9,8 +11,6 @@ H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\Cirrious.MvvmCro
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\Cirrious.MvvmCross.Touch.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\OmnicTabs.Core.dll
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\OmnicTabs.Core.pdb
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\obj\iPhone\Debug\
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\obj\iPhone\Debug\OmnicTabs.Touch.csprojResolveAssemblyReference.cache
+H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\OmnicTabs.Core.dll.mdb
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\obj\iPhone\Debug\TabbedTouch.exe
 H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\obj\iPhone\Debug\TabbedTouch.pdb
-H:\root\android\N-25-Tabbed\TestO\Tabbed.Touch\bin\iPhone\Debug\OmnicTabs.Core.dll.mdb

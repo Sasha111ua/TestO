@@ -6,9 +6,14 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text Refresh; Click RefreshCommand"
+        android:id="@+id/button1" />
     <Mvx.MvxListView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        local:MvxBind="ItemsSource Images"
+        android:layout_height="match_parent"
+        local:MvxBind="ItemsSource Images; ItemClick ZoomImageCommand"
         local:MvxItemTemplate="@layout/item_image" />
 </LinearLayout>

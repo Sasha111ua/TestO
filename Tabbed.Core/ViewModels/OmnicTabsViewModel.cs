@@ -40,10 +40,17 @@ namespace OmnicTabs.Core.ViewModels
     : MvxViewModel
     {
         
-        public ICommand GoCommand
+        public ICommand ZoomImageCommand
         {
             get { return new MvxCommand(() => ShowViewModel<GrandChildViewModel>());}
         }
+        public ICommand RefreshCommand
+        {
+            get { return new MvxCommand(() => LoadImages(new ImageLoader())); }
+        }
+
+        public string Refresh { get { return "Refresh"; } }
+
         List<Image> _images;
         public List<Image> Images
         {
@@ -52,6 +59,10 @@ namespace OmnicTabs.Core.ViewModels
         }
 
         public Child1ViewModel(IImageService service)
+        {
+            LoadImages(service);
+        }
+        void LoadImages(IImageService service)
         {
             var newList = new List<Image>();
             for (var i = 0; i < 10; i++)
@@ -62,6 +73,7 @@ namespace OmnicTabs.Core.ViewModels
 
             Images = newList;
         }
+       
     }
     public class Child2ViewModel
     : MvxViewModel

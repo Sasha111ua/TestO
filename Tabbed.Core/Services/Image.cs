@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OmnicTabs.Core.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,21 +11,21 @@ namespace OmnicTabs.Core.Services
         public string Url { get; set; }
     }
 
-    public class ImageLoader : IImageService
-    {
-        public Image ImageFactory()
-        {
-            return new Image { Url = string.Format("http://placekitten.com/{0}/{0}", Random(20) + 300) };
-        }
-        readonly System.Random _random = new System.Random();
-        protected int Random(int count)
-        {
-            return _random.Next(count);
-        }
+   public class ImageLoader : IImageService
+   {
+       public Image ImageFactory()
+       {
+           return new Image { Url = string.Format("http://lorempixel.com/{0}/{0}", Random(20) + 300) };
+       }
+       readonly System.Random _random = new System.Random();
+       protected int Random(int count)
+       {
+           return _random.Next(count);
+       }
 
-        protected int RandomPrice()
-        {
-            return Random(23) + 3;
-        }
-    }
+       protected int RandomPrice()
+       {
+           return Random(23) + 3;
+       }
+   }
 }

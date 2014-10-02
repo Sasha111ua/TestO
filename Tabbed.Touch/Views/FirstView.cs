@@ -90,7 +90,7 @@ namespace OmnicTabs.Touch.Views
             Add(button);
 
          //   this.CreateBinding(label).To<Child1ViewModel>(vm => vm.Foo).Apply();
-            this.CreateBinding(button).To<Child1ViewModel>(vm => vm.GoCommand).Apply();
+         //   this.CreateBinding(button).To<Child1ViewModel>(vm => vm.GoCommand).Apply();
         }
     }
     public class Child2View : MvxViewController
