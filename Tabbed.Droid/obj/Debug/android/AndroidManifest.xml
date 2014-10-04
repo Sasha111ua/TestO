@@ -3,7 +3,6 @@
   <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" />
   <application android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="OmnicTabs.Droid" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash" android:name="omnictabs.droid.SplashScreen" />
-    <activity android:label="View for FirstViewModel" android:name="omnictabs.droid.views.FirstView" />
     <activity android:label="View for GrandChildViewModel" android:name="omnictabs.droid.views.GrandChildView" />
     <activity android:label="View for Child1ViewModel" android:name="omnictabs.droid.views.Child1View" />
     <activity android:label="View for Child2ViewModel" android:name="omnictabs.droid.views.Child2View" />
