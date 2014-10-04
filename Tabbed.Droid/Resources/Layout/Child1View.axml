@@ -14,6 +14,7 @@
     <Mvx.MvxListView
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
+        android:id="@+id/list_view"
         local:MvxBind="ItemsSource Images; SelectedItem ChosenItem; ItemClick ZoomImageCommand; "
         local:MvxItemTemplate="@layout/item_image" />
 </LinearLayout>

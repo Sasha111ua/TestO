@@ -1,6 +1,7 @@
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows.Input;
 using Cirrious.MvvmCross.ViewModels;
-using System.Collections.Generic;
 using OmnicTabs.Core.Services;
 using System.Threading.Tasks;
 
@@ -40,11 +41,15 @@ namespace OmnicTabs.Core.ViewModels
     public class Child1ViewModel
     : MvxViewModel
     {
-        
+
         public ICommand ZoomImageCommand
         {
             // I thinks its a bug, but ShowViewModel<T> doesnt work, so for now i pass params throu static.
-            get { return new MvxCommand(() => ShowViewModel(typeof(GrandChildViewModel))); }
+            get
+            {
+                return new MvxCommand(() => ShowViewModel(typeof(GrandChildViewModel)));
+            }
+
         }
         public ICommand RefreshCommand
         {
@@ -53,8 +58,8 @@ namespace OmnicTabs.Core.ViewModels
 
         public string Refresh { get { return "Refresh"; } }
 
-        List<Image> _images;
-        public List<Image> Images
+        static ObservableCollection<Image> _images;
+        public ObservableCollection<Image> Images
         {
             get { return _images; }
             set { _images = value; RaisePropertyChanged(() => Images); }
@@ -75,10 +80,10 @@ namespace OmnicTabs.Core.ViewModels
         } 
         private async void LoadImages(IImageService service)
         {
-             Images = await Task<List<Image>>.Factory.StartNew(() =>
+             Images = await Task<ObservableCollection<Image>>.Factory.StartNew(() =>
                 {
-                    var newList = new List<Image>();
-                    for (var i = 0; i < 1000; i++)
+                    var newList = new ObservableCollection<Image>();
+                    for (var i = 0; i < 5; i++)
                     {
                         var newKitten = service.ImageFactory();
                         newList.Add(newKitten);
@@ -87,7 +92,14 @@ namespace OmnicTabs.Core.ViewModels
                     return newList;
                 });
         }
-       
+
+
+        public static void DeleteImage()
+        {
+            var imageToDel = new Parameters().ImageToDel;
+            if (_images.Any() && imageToDel.HasValue)
+                _images.RemoveAt(imageToDel.Value);
+        }
     }
     public class Child2ViewModel
     : MvxViewModel
@@ -114,37 +126,28 @@ namespace OmnicTabs.Core.ViewModels
     public class GrandChildViewModel
         : MvxViewModel
     {
-        Child1ViewModel _parent;
         string _imageUrl;
         public GrandChildViewModel()
         {
             _imageUrl = Parameters.GetImageUrl();
+            
         }
        public string ImageUrl
         {
             get { return _imageUrl; }
             set { _imageUrl = value; RaisePropertyChanged(() => ImageUrl); }
         }
-       public ICommand SaveButtonClick
-        {
-            get { return new MvxCommand(() => SaveButtonClickHandler()); }
-        }
-
-       void SaveButtonClickHandler()
+       private MvxCommand _deleteCommand;
+       public ICommand DeleteCommand
        {
-         //here save photo
+           get
+           {
+               _deleteCommand = _deleteCommand ?? new MvxCommand(Child1ViewModel.DeleteImage);
+               return _deleteCommand;
+           }
        }
-        public ICommand RemoveButtonClick
-        {
-            get { return new MvxCommand(() => RemoveButtonClickHandler()); }
-        }
-
-        void RemoveButtonClickHandler()
-        {
-            //here to remove file to Gallery
-        }
     }
-    public static class Parameters
+    public class Parameters
     {
        static string _imageUrl;
        public static void SetImageUrl(string url)
@@ -154,6 +157,12 @@ namespace OmnicTabs.Core.ViewModels
        public static string GetImageUrl()
         {
             return _imageUrl;
+        }
+
+        private static int? _imageToDel;
+        public int? ImageToDel {
+            get { return  _imageToDel; }
+            set { _imageToDel = value; }
         }
     }
 }
