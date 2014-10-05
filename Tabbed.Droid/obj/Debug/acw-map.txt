@@ -1,4 +1,5 @@
 OmnicTabs.Droid.SplashScreen;omnictabs.droid.SplashScreen
+OmnicTabs.Droid.Views.FirstView;omnictabs.droid.views.FirstView
 OmnicTabs.Droid.Views.GrandChildView;omnictabs.droid.views.GrandChildView
 OmnicTabs.Droid.Views.Child1View;omnictabs.droid.views.Child1View
 OmnicTabs.Droid.Views.Child2View;omnictabs.droid.views.Child2View

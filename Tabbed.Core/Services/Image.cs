@@ -1,4 +1,10 @@
-﻿
+﻿using OmnicTabs.Core.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+
 namespace OmnicTabs.Core.Services
 {
    public class Image
@@ -16,6 +22,11 @@ namespace OmnicTabs.Core.Services
        protected int Random(int count)
        {
            return _random.Next(count);
+       }
+
+       protected int RandomPrice()
+       {
+           return Random(23) + 3;
        }
    }
 }

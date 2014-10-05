@@ -86,7 +86,7 @@ namespace OmnicTabs.Core.ViewModels
              Images = await Task<ObservableCollection<Image>>.Factory.StartNew(() =>
                 {
                     var newList = new ObservableCollection<Image>();
-                    for (var i = 0; i < 100; i++)
+                    for (var i = 0; i < 5; i++)
                     {
                         var newKitten = service.ImageFactory();
                         newList.Add(newKitten);
