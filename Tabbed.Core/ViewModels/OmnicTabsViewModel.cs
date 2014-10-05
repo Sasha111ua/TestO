@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using Cirrious.MvvmCross.Community.Plugins.Sqlite;
 using Cirrious.MvvmCross.ViewModels;
 using OmnicTabs.Core.Services;
 using System.Threading.Tasks;
+using  Cirrious.MvvmCross.Plugins.Sqlite;
 
 namespace OmnicTabs.Core.ViewModels
 {
@@ -13,7 +16,7 @@ namespace OmnicTabs.Core.ViewModels
         public OmnicTabsViewModel()
         {
             Child1 = new Child1ViewModel(new ImageLoader());
-            Child2 = new Child2ViewModel();
+            Child2 = new Child2ViewModel(new DataService(new SQLiteClient()));
             Child3 = new Child3ViewModel();
         }
         private Child1ViewModel _child1;
@@ -104,13 +107,21 @@ namespace OmnicTabs.Core.ViewModels
     public class Child2ViewModel
     : MvxViewModel
     {
-        private string _bar= @"Hello bar";
-        public string Bar
-        {
-            get { return _bar; }
-            set { _bar = value; RaisePropertyChanged(() => Bar); }
+        private readonly IDataService _dataService;
+        private List<Location> _locations;
+        public List<Location> Locations {
+            get
+            {
+                _locations = _dataService.GetLocations();
+                return  _locations;
+            }
+            set { _locations = value; RaisePropertyChanged(()=> Locations); }
         }
-        
+
+        public Child2ViewModel(IDataService dataService)
+        {
+            _dataService = dataService;     
+        }
     }
     public class Child3ViewModel
     : MvxViewModel

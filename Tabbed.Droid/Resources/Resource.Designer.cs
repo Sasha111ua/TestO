@@ -134,13 +134,16 @@ namespace OmnicTabs.Droid
 			public const int Item_Image = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int OmnicTabsView = 2130903045;
+			public const int Item_Location = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SplashScreen = 2130903046;
+			public const int OmnicTabsView = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int ZoomedImageView = 2130903047;
+			public const int SplashScreen = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int ZoomedImageView = 2130903048;
 			
 			static Layout()
 			{
